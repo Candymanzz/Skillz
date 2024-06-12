@@ -356,8 +356,8 @@ const langArr = {
     en: "Terms conditins",
   },
   "all-rights": {
-    ru: "© 2021 Furniking - Все права защищены.",
-    en: "© 2021 Furniking - All rights reserved.",
+    ru: "© 2021 Skillz - Все права защищены.",
+    en: "© 2021 skillz - All rights reserved.",
   },
   privacy: {
     ru: "Приватность",

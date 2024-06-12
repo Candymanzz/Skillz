@@ -288,8 +288,8 @@ const langArr = {
     en: "23 September 2022",
   },
   beginner: {
-    ru: "Руководство для начинающих по покупке миниатюрного дивана",
-    en: "Begineer guide buying minimal sofa",
+    ru: "Руководство для начинающих по созданию своих курсов",
+    en: "A beginner's guide to creating your own courses",
   },
   "buying-best": {
     ru: "Покупка лучшего минималистичного компьютерного стола",
@@ -585,37 +585,37 @@ const langArr = {
   //АРТИКЛИ
 
   //1
+  "art1-title": {
+    ru: "Руководство для начинающих по созданию своих курсов",
+    en: "A beginner's guide to creating your own courses",
+  },
+  "art1-pre-title": {
+    ru: "Если вы хотите создать быстро и лего крус то у нас есть решение!",
+    en: "If you want to create a quick and easy Lego Cruz, then we have a solution!",
+  },
   "art1-text-title": {
-    ru: "Увеличение вовлеченности в Instagram: стратегии для роста",
-    en: "Increasing Engagement on Instagram: Strategies for Growth",
+    ru: "Создание и развитие собственной онлайн-платформы для обучения",
+    en: "Establishing and Thriving with Your Own Online Learning Platform",
   },
   "art1-p1": {
-    ru: "Создание лояльной и вовлеченной аудитории в Instagram имеет решающее значение для бизнесов и создателей контента, стремящихся преуспеть на этой платформе. Одним из наиболее эффективных способов повышения вовлеченности является создание высококачественного, визуально привлекательного контента, резонирующего с целевой аудиторией.",
-    en: "Building a loyal and engaged following on Instagram is crucial for businesses and content creators looking to thrive on the platform. One of the most effective ways to boost engagement is by creating high-quality, visually appealing content that resonates with your target audience.",
+    ru: "Создание собственной онлайн-платформы для обучения может быть вознаграждающим и прибыльным предприятием, позволяющим делиться своими знаниями и опытом с глобальной аудиторией. Первым шагом является определение целевой аудитории и конкретных навыков или знаний, которыми вы можете поделиться. Это поможет вам создать учебную программу, отвечающую потребностям ваших учеников.",
+    en: "Running your own online learning platform can be a rewarding and lucrative venture, allowing you to share your expertise with a global audience. The first step is to identify your target audience and the specific skills or knowledge you can offer. This will help you create a curriculum that meets the needs of your learners.",
   },
   "art1-p2": {
-    ru: "Последовательность имеет ключевое значение при публикации в Instagram. Стремитесь публиковать новый контент в регулярные интервалы, будь то раз в день, через день или несколько раз в неделю. Это помогает держать вашу аудиторию вовлеченной и ожидающей ваших следующих публикаций. Используйте контент-календарь или инструмент планирования, чтобы упростить процесс и обеспечить постоянный поток свежего материала.",
-    en: "Leveraging Instagram's various features, such as Stories, Reels, and Live videos, can also help increase engagement. These interactive formats allow you to connect with your followers in real-time, share behind-the-scenes glimpses, and showcase your brand's personality. Experiment with different types of content to see what resonates best with your audience.",
+    ru: "Далее, вам необходимо выбрать надежную и удобную для пользователя систему управления обучением (LMS), способную обрабатывать создание курсов, регистрацию и доставку контента. Популярные варианты включают Moodle, Canvas и Teachable, каждый со своим набором функций и ценовой политикой. Тщательно оцените возможности платформы, ее масштабируемость и простоту использования, чтобы обеспечить безупречный опыт как для вас, так и для ваших учеников.",
+    en: "Next, you'll need to choose a reliable and user-friendly learning management system (LMS) that can handle course creation, enrollment, and content delivery. Popular options include Moodle, Canvas, and Teachable, each with its own set of features and pricing structures. Carefully consider the platform's capabilities, scalability, and ease of use to ensure a seamless experience for both you and your students.",
   },
   "art1-p3": {
-    ru: "Использование различных функций Instagram, таких как истории, ролики и прямые трансляции, также может помочь повысить вовлеченность. Эти интерактивные форматы позволяют вам взаимодействовать со своими подписчиками в режиме реального времени, делиться закулисными взглядами и демонстрировать индивидуальность вашего бренда. Экспериментируйте с разными типами контента, чтобы увидеть, что лучше всего резонирует с вашей аудиторией.",
-    en: "Engaging with your followers is another essential strategy for boosting engagement. Respond promptly to comments, ask thought-provoking questions, and encourage your audience to share their own content or experiences. Building a sense of community and fostering authentic connections can lead to increased loyalty and engagement.",
+    ru: "Создание качественного учебного контента имеет решающее значение для успеха вашей онлайн-платформы для обучения. Это может включать создание увлекательных видеолекций, интерактивных тестов, заданий и дополнительных материалов. Уделите время разработке полированного и визуально привлекательного дизайна курса, который отражает ваш бренд и способствует вовлечению учащихся.",
+    en: "Crafting high-quality course content is crucial for the success of your online learning platform. This may involve creating engaging video lectures, interactive quizzes, assignments, and supplementary materials. Invest time in developing a polished and visually appealing course design that reflects your brand and encourages learner engagement.",
   },
   "art1-p4": {
-    ru: "Взаимодействие с вашими подписчиками - это еще одна важная стратегия для повышения вовлеченности. Своевременно отвечайте на комментарии, задавайте провокационные вопросы и побуждайте аудиторию делиться собственным контентом или опытом. Создание чувства сообщества и налаживание подлинных связей может привести к повышению лояльности и вовлеченности.",
-    en: "Utilizing relevant hashtags and geotags can also help expand your reach and attract new followers. Research and use a mix of popular, niche, and branded hashtags that align with your content and target audience. This can help your posts appear in relevant searches and increase the visibility of your brand.",
+    ru: "Эффективный маркетинг и продвижение имеют ключевое значение для привлечения и удержания студентов. Используйте социальные сети, email-кампании и оптимизацию для поисковых систем, чтобы достичь целевой аудитории. Предлагайте бесплатные образцы или пробные версии, чтобы дать потенциальным студентам возможность оценить ваши предложения, и рассмотрите возможность предоставления стимулов или скидок для поощрения регистрации.",
+    en: "Effective marketing and promotion are key to attracting and retaining students. Utilize social media, email campaigns, and search engine optimization to reach your target audience. Offer free samples or trials to give potential students a taste of your offerings, and consider offering incentives or discounts to encourage enrollment.",
   },
   "art1-p5": {
-    ru: "Использование актуальных хэштегов и геотегов также может помочь расширить охват и привлечь новых подписчиков. Исследуйте и используйте сочетание популярных, узконаправленных и фирменных хэштегов, соответствующих вашему контенту и целевой аудитории. Это может помочь вашим постам появляться в соответствующих поисках и повысить видимость вашего бренда.",
-    en: "Color is an important element in minimalistic design. While neutral tones are popular, you can also introduce subtle pops of color to create visual interest. Think about incorporating a single accent color through cushions or throws to add a touch of personality without overwhelming the simplicity of the overall design.",
-  },
-  "art1-p6": {
-    ru: "Сотрудничество с другими влиятельными лицами, брендами или дополняющими создателями контента также может быть эффективным способом повышения вовлеченности. Кросс-продвижение, совместное создание контента и совместные розыгрыши или конкурсы могут помочь вам выйти на новую аудиторию и создать ценные партнерские отношения.",
-    en: "Collaborating with other influencers, brands, or complementary creators can also be an effective way to boost engagement. Cross-promotion, co-created content, and joint giveaways or contests can help you tap into new audiences and create valuable partnerships.",
-  },
-  "art1-p7": {
-    ru: "Наконец, анализ аналитики Instagram и соответствующая корректировка вашей стратегии имеют решающее значение для долгосрочного роста и вовлеченности. Отслеживайте показатели, такие как лайки, комментарии, охват и рост подписчиков, чтобы определить ваш наиболее успешный контент и принимать информированные решения относительно ваших будущих усилий по публикации и вовлечению.",
-    en: "Finally, analyzing your Instagram analytics and adjusting your strategy accordingly is crucial for long-term growth and engagement. Track metrics like likes, comments, reach, and follower growth to identify your most successful content and make informed decisions about your future posting and engagement efforts.",
+    ru: "Наконец, не забывайте о важности постоянной поддержки и обслуживания клиентов. Быстро реагируйте на запросы учеников, решайте любые технические проблемы и постоянно собирайте обратную связь для улучшения платформы и качества обучения. Предоставляя высококачественную, персонализированную и доступную учебную среду, вы можете создать процветающее онлайн-сообщество обучения и открыть новые возможности для личностного и профессионального роста.",
+    en: "Finally, don't forget the importance of ongoing support and customer service. Respond promptly to student inquiries, address any technical issues, and continuously gather feedback to improve the platform and the learning experience. By providing a high-quality, personalized, and accessible learning environment, you can build a thriving online learning community and unlock new opportunities for personal and professional growth.",
   },
 
   //2
