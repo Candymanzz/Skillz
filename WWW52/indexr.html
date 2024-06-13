@@ -11,6 +11,7 @@
     <link rel="manifest" href="./img/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" id="theme-link">
     <title>Skillz</title>
     <style>
         /* Default dark theme styles */
@@ -45,6 +46,12 @@
 </head>
 
 <body class="_lock-scroll">
+    <style>
+        .light-theme {
+            background-color: #afafaf;
+            color: #333;
+        }
+    </style>
     <div class="wrapper">
         <div class="preloader" id="preloader">
             <div class="preloader__icon">
@@ -71,28 +78,29 @@
                             <div class="menu__content menu-content">
                                 <ul class="menu-content__list">
                                     <li class="menu-content__list-item">
-                                        <a class="menu-content__list-link scroll-to" href="#courses">Courses</a>
+                                        <a class="menu-content__list-link scroll-to lng-courses"
+                                            href="#courses">Курсы</a>
                                     </li>
                                     <li class="menu-content__list-item">
-                                        <a class="menu-content__list-link scroll-to" href="#workshops">Free
-                                            Workshops</a>
+                                        <a class="menu-content__list-link scroll-to light-theme-t"
+                                            href="#workshops">Бесплатные семинары</a>
                                     </li>
                                     <li class="menu-content__list-item">
-                                        <a class="menu-content__list-link scroll-to" href="#blog">Blog</a>
+                                        <a class="menu-content__list-link scroll-to" href="#blog">Блог</a>
                                     </li>
                                     <li class="menu-content__list-item">
-                                        <a class="menu-content__list-link scroll-to" href="#about">About</a>
+                                        <a class="menu-content__list-link scroll-to" href="#about">О нас</a>
                                     </li>
                                     <li class="menu-content__list-item">
-                                        <a class="menu-content__list-link scroll-to" href="#contact">Contact</a>
+                                        <a class="menu-content__list-link scroll-to" href="#contact">Контакты</a>
                                     </li>
                                     <li class="menu-content__list-item top-header__exits">
                                         <a class="menu-content__list-link scroll-to"
-                                            href="./login/authorization.html">Log in</a>
+                                            href="./login/authorization.html">Вход</a>
                                     </li>
                                     <li class="menu-content__list-item top-header__exits2 hidden">
                                         <button class="menu-content__list-link scroll-to lng-theme top-button"
-                                            id="toggleThemeBtn">Switch theme</button>
+                                            id="toggleThemeBtn">Переключить тему</button>
                                     </li>
                                     <script>
                                         const toggleThemeBtn = document.getElementById('toggleThemeBtn');
@@ -104,9 +112,17 @@
                                     </script>
                                     <li class="menu-content__list-item top-header__exits2 hidden">
                                         <div class="top-header__select">
-                                            <a href="./indexr.html">RU</a>
+                                            <a href="./index.html">EN</a>
                                         </div>
                                     </li>
+                                    <script>
+                                        function changeLanguage() {
+                                            var selectedLanguage = document.getElementById("header-selct").value;
+                                            if (selectedLanguage === "ru") {
+                                                window.location.href = "af-regr.html"; // Замените на URL-адрес русской страницы
+                                            }
+                                        }
+                                    </script>
                                 </ul>
                             </div>
                         </div>
@@ -148,18 +164,20 @@
                 <div class="main-block__content">
                     <div class="_container">
                         <div class="main-block__body">
-                            <h3 class="main-block__label wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s">Featured Course</h3>
-                            <h1 class="main-block__title wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s" data-wow-delay="0.1s">Run your own online learning platform
+                            <h3 class="main-block__label wow animate__animated animate__fadeInUp lng-qwe"
+                                data-wow-duration="0.6s">Рекомендуемый курс</h3>
+                            <h1 class="main-block__title wow animate__animated animate__fadeInUp lng-qwe"
+                                data-wow-duration="0.6s" data-wow-delay="0.1s">Запустите собственную платформу
+                                онлайн-обучения
                             </h1>
-                            <p class="main-block__text wow animate__animated animate__fadeInUp" data-wow-duration="0.6s"
-                                data-wow-delay="0.3s">A deep-dive on the Instagram algorythm, hashtags, content
-                                strategy, and branding.</p>
-                            <span class="main-block__by wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s" data-wow-delay="0.5s">Kathryn Murphy</span>
-                            <a class="main-block__button button button_green wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s" data-wow-delay="0.7s" href="./p1/article1.html">Learn More</a>
+                            <p class="main-block__text wow animate__animated animate__fadeInUp lng-qwe"
+                                data-wow-duration="0.6s" data-wow-delay="0.3s">Подробное описание алгоритма Instagram,
+                                хэштегов и контента.</p>
+                            <span class="main-block__by wow animate__animated animate__fadeInUp lng-qwe"
+                                data-wow-duration="0.6s" data-wow-delay="0.5s">Кэтрин Мерфи</span>
+                            <a class="main-block__button button button_green wow animate__animated animate__fadeInUp lng-qwe"
+                                data-wow-duration="0.6s" data-wow-delay="0.7s" href="./p1/article1.html">Узнать
+                                больше</a>
                         </div>
                     </div>
                 </div>
@@ -176,13 +194,14 @@
                     <div class="featured__body">
                         <div class="featured__row">
                             <h2 class="featured__title title wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s">Featured Courses</h2>
+                                data-wow-duration="0.6s">Рекомендуемые курсы</h2>
                             <p class="featured__sub-title sub-title wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                                ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                                data-wow-duration="0.6s">Клиент очень важен, за клиентом пойдет клиент.
+                                На самом деле стрессовый фактор в эросе — это печальный элемент. Два курса, мой мультик
+                                украшать, иногда не было боли в земле, так что преимуществом дома была вольная жизнь.
+                            </p>
                             <a class="featured__button button button_green wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s" href="#">View All Courses</a>
+                                data-wow-duration="0.6s" href="#">Посмотреть все курсы</a>
                         </div>
                         <div class="featured__columns featured-columns">
                             <article class="featured-columns__card wow animate__animated animate__fadeInUp"
@@ -195,15 +214,15 @@
                                 </a>
                                 <div class="featured-columns__content">
                                     <h5 class="featured-columns__title">
-                                        <a class="featured-columns__link" href="./p2/article1.html">How to Increase Your
-                                            Engagement on
-                                            Instagram</a>
+                                        <a class="featured-columns__link" href="./p2/article1.html">Как увеличить свой
+                                            Вовлеченность на
+                                            Инстаграм</a>
                                     </h5>
-                                    <p class="featured-columns__text">Katie Murphy</p>
+                                    <p class="featured-columns__text">Кэти Мерфи</p>
                                     <div class="featured-columns__price">
                                         <span class="featured-columns__price-text">$ 59.99 USD</span>
                                     </div>
-                                    <a class="featured-columns__more" href="./p2/article1.html">Learn More</a>
+                                    <a class="featured-columns__more" href="./p2/article1.html">Узнать больше</a>
                                 </div>
                             </article>
                             <article class="featured-columns__card wow animate__animated animate__fadeInUp"
@@ -216,17 +235,17 @@
                                 </a>
                                 <div class="featured-columns__content">
                                     <h5 class="featured-columns__title">
-                                        <a class="featured-columns__link" href="./p3/article1.html">Business 101:
-                                            Setting up Your
-                                            Taxes</a>
+                                        <a class="featured-columns__link" href="./p3/article1.html">Бизнес 101:
+                                            Настройка вашего
+                                            Налоги</a>
                                     </h5>
-                                    <p class="featured-columns__text">Bessie Cooper</p>
+                                    <p class="featured-columns__text">Бесси Купер</p>
                                     <div class="featured-columns__price">
                                         <span class="featured-columns__price-text featured-columns__price-text_stock">$
                                             69.99 USD</span>
                                         <span class="featured-columns__price-text">$ 39.99 USD</span>
                                     </div>
-                                    <a class="featured-columns__more" href="./p3/article1.html">Learn More</a>
+                                    <a class="featured-columns__more" href="./p3/article1.html">Узнать больше</a>
                                 </div>
                             </article>
                             <article class="featured-columns__card wow animate__animated animate__fadeInUp"
@@ -239,17 +258,18 @@
                                 </a>
                                 <div class="featured-columns__content">
                                     <h5 class="featured-columns__title">
-                                        <a class="featured-columns__link" href="./p4/article1.html">iPhone Photography:
-                                            Tips, Tricks and
-                                            Best Practices</a>
+                                        <a class="featured-columns__link" href="./p4/article1.html">Фотография на
+                                            iPhone:
+                                            Советы, хитрости и
+                                            Лучшие практики</a>
                                     </h5>
-                                    <p class="featured-columns__text">Dianne Russell</p>
+                                    <p class="featured-columns__text">Дайан Рассел</p>
                                     <div class="featured-columns__price">
                                         <span class="featured-columns__price-text featured-columns__price-text_stock">$
                                             69.99 USD</span>
                                         <span class="featured-columns__price-text">$ 39.99 USD</span>
                                     </div>
-                                    <a class="featured-columns__more" href="./p4/article1.html">Learn More</a>
+                                    <a class="featured-columns__more" href="./p4/article1.html">Узнать больше</a>
                                 </div>
                             </article>
                         </div>
@@ -267,12 +287,13 @@
                     <div class="_container">
                         <div class="contact__body">
                             <h2 class="contact__title title wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s">Get personalized learning recommendations</h2>
+                                data-wow-duration="0.6s">Получите персональные рекомендации по обучению</h2>
                             <p class="contact__text wow animate__animated animate__fadeInUp" data-wow-duration="0.6s">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus sit amet
-                                luctus venenatis, lectus magna fringilla urnaLorem ipsum dolor sit amet.</p>
+                                Давайте будем очень сожалеть о боли, давайте будем стремиться к образованию некоторых,
+                                давайте будем чистыми, пусть кровать будет отравлена, пусть кровать будет великой,
+                                давайте очень пожалеем о боли.</p>
                             <a class="contact__button button button_green wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s" href="#">Contact Us</a>
+                                data-wow-duration="0.6s" href="#">Связаться с нами</a>
                         </div>
                     </div>
                 </div>
@@ -282,38 +303,45 @@
                     <div class="workshops__body">
                         <div class="workshops__row">
                             <h2 class="workshops__title title wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s">Upcoming Free Workshops</h2>
+                                data-wow-duration="0.6s">Предстоящие бесплатные семинары</h2>
                             <p class="workshops__sub-title sub-title wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                                ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                                data-wow-duration="0.6s">Клиент очень важен, за клиентом пойдет клиент.
+                                На самом деле стрессовый фактор в эросе — это печальный элемент. Два курса, мой мультик
+                                украшать, иногда не было боли в земле, так что преимуществом дома была вольная жизнь.
+                            </p>
                             <a class="workshops__button button button_green wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s" href="#">View All Workshops</a>
+                                data-wow-duration="0.6s" href="#">Посмотреть все семинары</a>
                         </div>
                         <div class="workshops__columns workshops-columns">
                             <article class="workshops-columns__card wow animate__animated animate__fadeInUp"
                                 data-wow-duration="0.6s">
-                                <h5 class="workshops-columns__title">Photography Basics</h5>
-                                <p class="workshops-columns__text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna,
-                                    porttitor rhoncus dolor purus non enim praesent elementum facilisis leo.</p>
-                                <a class="workshops-columns__link" href="./p5/article1.html">Learn More</a>
+                                <h5 class="workshops-columns__title">Основы фотографии</h5>
+                                <p class="workshops-columns__text">Клиент очень важен, за клиентом пойдет клиент.
+                                    На самом деле стрессовый фактор в эросе — это печальный элемент. Два курса, мой
+                                    мультик
+                                    украшать, иногда не было боли в земле, так что преимуществом дома была вольная
+                                    жизнь.</p>
+                                <a class="workshops-columns__link" href="./p5/article1.html">Узнать больше</a>
                             </article>
                             <article class="workshops-columns__card wow animate__animated animate__fadeInUp"
                                 data-wow-duration="0.6s" data-wow-delay="0.2s">
-                                <h5 class="workshops-columns__title">Business 101</h5>
-                                <p class="workshops-columns__text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna,
-                                    porttitor rhoncus dolor purus non enim praesent elementum facilisis leo.</p>
-                                <a class="workshops-columns__link" href="./p3/article1.html">Learn More</a>
+                                <h5 class="workshops-columns__title">Бизнес 101</h5>
+                                <p class="workshops-columns__text">Клиент очень важен, за клиентом пойдет клиент.
+                                    На самом деле стрессовый фактор в эросе — это печальный элемент. Два курса, мой
+                                    мультик
+                                    украшать, иногда не было боли в земле, так что преимуществом дома была вольная
+                                    жизнь.</p>
+                                <a class="workshops-columns__link" href="./p3/article1.html">Узнать больше</a>
                             </article>
                             <article class="workshops-columns__card wow animate__animated animate__fadeInUp"
                                 data-wow-duration="0.6s" data-wow-delay="0.4s">
-                                <h5 class="workshops-columns__title">Social Networking Camp</h5>
-                                <p class="workshops-columns__text">Lorem ipsum dolor sit amet, consectetur adipiscing
-                                    elit ut aliquam, purus sit amet luctus venenatis, lectus magna fringilla urna,
-                                    porttitor rhoncus dolor purus non enim praesent elementum facilisis leo.</p>
-                                <a class="workshops-columns__link" href="./p6/article1.html">Learn More</a>
+                                <h5 class="workshops-columns__title">Лагерь социальных сетей</h5>
+                                <p class="workshops-columns__text">Клиент очень важен, за клиентом пойдет клиент.
+                                    На самом деле стрессовый фактор в эросе — это печальный элемент. Два курса, мой
+                                    мультик
+                                    украшать, иногда не было боли в земле, так что преимуществом дома была вольная
+                                    жизнь.</p>
+                                <a class="workshops-columns__link" href="./p6/article1.html">Узнать больше</a>
                             </article>
                         </div>
                     </div>
@@ -327,32 +355,35 @@
                                 <div class="reviews-slide__rating">
                                     <div class="reviews-slide__rating-active" style="width: 100%"></div>
                                 </div>
-                                <p class="reviews-slide__text">“Kate’s courses are a game changer. She’s thorough,
-                                    organized, and explains things in a no-nonsense way that makes it easy for
-                                    anyone—beginners it easy for anyone—beginners it easy for anyone—beginners to
-                                    experts—to learn something from her courses and take their game to the next level.”
+                                <p class="reviews-slide__text">“Курсы Кейт меняют правила игры. Она тщательная
+                                    организован и объясняет вещи в серьезной форме, что облегчает
+                                    любой — новичкам легко для всех — новичкам легко для всех — начинающим
+                                    эксперты — чтобы научиться чему-то на ее курсах и вывести свою игру на новый
+                                    уровень.”
                                 </p>
-                                <span class="reviews-slide__by">James Brown, Influencer</span>
+                                <span class="reviews-slide__by">Джеймс Браун, влиятельный человек</span>
                             </div>
                             <div class="reviews__slide reviews-slide swiper-slide">
                                 <div class="reviews-slide__rating">
                                     <div class="reviews-slide__rating-active" style="width: 80%"></div>
                                 </div>
-                                <p class="reviews-slide__text">“Kate’s courses are a game changer. She’s thorough,
-                                    organized, and explains things in a no-nonsense way that makes it easy for
-                                    anyone—beginners to experts—to learn something from her courses and take their game
-                                    to the next level.”</p>
-                                <span class="reviews-slide__by">James Brown, Influencer</span>
+                                <p class="reviews-slide__text">“Курсы Кейт меняют правила игры. Она тщательная
+                                    организован и объясняет вещи в серьезной форме, что облегчает
+                                    любой — от новичков до экспертов — может узнать что-то на ее курсах и пройти свою
+                                    игру
+                                    на следующий уровень.”</p>
+                                <span class="reviews-slide__by">Джеймс Браун, влиятельный человек</span>
                             </div>
                             <div class="reviews__slide reviews-slide swiper-slide">
                                 <div class="reviews-slide__rating">
                                     <div class="reviews-slide__rating-active" style="width: 60%"></div>
                                 </div>
-                                <p class="reviews-slide__text">“Kate’s courses are a game changer. She’s thorough,
-                                    organized, She’s thorough, organized, and explains things in a no-nonsense way that
-                                    makes it easy for anyone—beginners to experts—to learn something from her courses
-                                    and take their game to the next level.”</p>
-                                <span class="reviews-slide__by">James Brown, Influencer</span>
+                                <p class="reviews-slide__text">“Курсы Кейт меняют правила игры. Она тщательная
+                                    организован и объясняет вещи в серьезной форме, что облегчает
+                                    любой — от новичков до экспертов — может узнать что-то на ее курсах и пройти свою
+                                    игру
+                                    на следующий уровень.”</p>
+                                <span class="reviews-slide__by">Джеймс Браун, влиятельный человек</span>
                             </div>
                         </div>
                         <div class="reviews-slide__pagination swiper-pagination"></div>
@@ -370,11 +401,11 @@
                     <div class="_container">
                         <div class="about__body">
                             <h2 class="about__title title wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s">A Passion for Teaching</h2>
-                            <p class="about__text wow animate__animated animate__fadeInUp" data-wow-duration="0.6s">A
-                                deep-dive on the Instagram algorythm, hashtags, content strategy, and branding.</p>
+                                data-wow-duration="0.6s">Страсть к преподаванию</h2>
+                            <p class="about__text wow animate__animated animate__fadeInUp" data-wow-duration="0.6s">А
+                                подробное описание алгоритма Instagram, хэштегов, контентной стратегии и брендинга.</p>
                             <a class="about__button button button_green wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s" href="#">About Skillz</a>
+                                data-wow-duration="0.6s" href="#">О Скиллз</a>
                         </div>
                     </div>
                 </div>
@@ -384,13 +415,14 @@
                     <div class="articles__body">
                         <div class="articles__row">
                             <h2 class="articles__title title wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s">Recent Articles</h2>
+                                data-wow-duration="0.6s">Последние статьи</h2>
                             <p class="articles__sub-title sub-title wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-                                ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.</p>
+                                data-wow-duration="0.6s">Клиент очень важен, за клиентом пойдет клиент.
+                                На самом деле стрессовый фактор в эросе — это печальный элемент. Два курса, мой мультик
+                                украшать, иногда не было боли в земле, так что преимуществом дома была вольная жизнь.
+                            </p>
                             <a class="articles__button button button_green wow animate__animated animate__fadeInUp"
-                                data-wow-duration="0.6s" href="#">View all articles</a>
+                                data-wow-duration="0.6s" href="#">Посмотреть все статьи</a>
                         </div>
                         <div class="articles__columns articles-columns">
                             <article class="articles-columns__card wow animate__animated animate__fadeInUp"
@@ -402,12 +434,12 @@
                                     </picture>
                                 </a>
                                 <div class="articles-columns__content">
-                                    <span class="articles-columns__date">February 8, 2021</span>
+                                    <span class="articles-columns__date">8 февраля 2021 г.</span>
                                     <h5 class="articles-columns__title">
-                                        <a class="articles-columns__link" href="#">How to Increase Your Engagement on
-                                            Instagram</a>
+                                        <a class="articles-columns__link" href="#">Как повысить вашу вовлеченность в
+                                            Инстаграм</a>
                                     </h5>
-                                    <p class="articles-columns__text">Katie Murphy</p>
+                                    <p class="articles-columns__text">Кэти Мерфи</p>
                                 </div>
                             </article>
                             <article class="articles-columns__card wow animate__animated animate__fadeInUp"
@@ -419,12 +451,12 @@
                                     </picture>
                                 </a>
                                 <div class="articles-columns__content">
-                                    <span class="articles-columns__date">February 8, 2021</span>
+                                    <span class="articles-columns__date">8 февраля 2021 г.</span>
                                     <h5 class="articles-columns__title">
-                                        <a class="articles-columns__link" href="#">Business 101: Setting up Your
-                                            Taxes</a>
+                                        <a class="articles-columns__link" href="#">Бизнес 101: Настройка вашего
+                                            Налоги</a>
                                     </h5>
-                                    <p class="articles-columns__text">Bessie Cooper</p>
+                                    <p class="articles-columns__text">Бесси Купер</p>
                                 </div>
                             </article>
                             <article class="articles-columns__card wow animate__animated animate__fadeInUp"
@@ -436,12 +468,13 @@
                                     </picture>
                                 </a>
                                 <div class="articles-columns__content">
-                                    <span class="articles-columns__date">January 31, 2021</span>
+                                    <span class="articles-columns__date">31 января 2021 г.</span>
                                     <h5 class="articles-columns__title">
-                                        <a class="articles-columns__link" href="#">iPhone Photography: Tips, Tricks and
-                                            Best Practices</a>
+                                        <a class="articles-columns__link" href="#">Фотография на iPhone: советы,
+                                            подсказки и рекомендации
+                                            Лучшие практики</a>
                                     </h5>
-                                    <p class="articles-columns__text">Dianne Russell</p>
+                                    <p class="articles-columns__text">Дайан Рассел</p>
                                 </div>
                             </article>
                         </div>
@@ -451,14 +484,15 @@
             <section class="data">
                 <div class="_container">
                     <div class="data__body">
-                        <h2 class="data__title">You have the power to define your future.</h2>
+                        <h2 class="data__title">У вас есть сила определять свое будущее.</h2>
                         <form class="data__form data-form" action="#" name="sendEmail" data-form novalidate>
                             <div class="data-form__row">
                                 <input class="data-form__input" type="email" name="email" placeholder="EMAIL ADDRESS"
                                     autocomplete="off">
-                                <button class="data-form__send button button_dark" type="submit">SUBMIT</button>
+                                <button class="data-form__send button button_dark" type="submit">НА
+                                    РАССМОТРЕНИЕ</button>
                             </div>
-                            <div class="data-form__error" data-form-error>This field is not filled correctly</div>
+                            <div class="data-form__error" data-form-error>Это поле заполнено неверно</div>
                         </form>
                     </div>
                 </div>
@@ -475,57 +509,57 @@
                             <nav class="footer-main__menu footer-menu" data-spollers="479.98, max" data-one-spoller>
                                 <div class="footer-menu__column">
                                     <div class="footer-menu__title" data-spoller>
-                                        <span class="footer-menu__title-text">learning Platform </span>
+                                        <span class="footer-menu__title-text">обучающая платформа</span>
                                         <i class="footer-menu__title-arrow">
                                             <img src="./img/icons/arrow.svg" alt="Arrow">
                                         </i>
                                     </div>
                                     <ul class="footer-menu__list">
                                         <li class="footer-menu__list-item">
-                                            <a class="footer-menu__list-link" href="#">Home</a>
+                                            <a class="footer-menu__list-link" href="#">Дом</a>
                                         </li>
                                         <li class="footer-menu__list-item">
-                                            <a class="footer-menu__list-link" href="#">Courses</a>
+                                            <a class="footer-menu__list-link" href="#">Курсы</a>
                                         </li>
                                         <li class="footer-menu__list-item">
-                                            <a class="footer-menu__list-link" href="#">Free Workshops</a>
+                                            <a class="footer-menu__list-link" href="#">Бесплатные семинары</a>
                                         </li>
                                         <li class="footer-menu__list-item">
-                                            <a class="footer-menu__list-link" href="#">Blog</a>
+                                            <a class="footer-menu__list-link" href="#">Блог</a>
                                         </li>
                                         <li class="footer-menu__list-item">
-                                            <a class="footer-menu__list-link" href="#">About</a>
+                                            <a class="footer-menu__list-link" href="#">О нас</a>
                                         </li>
                                         <li class="footer-menu__list-item">
-                                            <a class="footer-menu__list-link" href="#">Contact</a>
+                                            <a class="footer-menu__list-link" href="#">Контакты</a>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="footer-menu__column">
                                     <div class="footer-menu__title" data-spoller>
-                                        <span class="footer-menu__title-text">Template </span>
+                                        <span class="footer-menu__title-text">Шаблон</span>
                                         <i class="footer-menu__title-arrow">
                                             <img src="./img/icons/arrow.svg" alt="Arrow">
                                         </i>
                                     </div>
                                     <ul class="footer-menu__list">
                                         <li class="footer-menu__list-item">
-                                            <a class="footer-menu__list-link" href="#">Instructions</a>
+                                            <a class="footer-menu__list-link" href="#">Инструкции</a>
                                         </li>
                                         <li class="footer-menu__list-item">
-                                            <a class="footer-menu__list-link" href="#">Style Guide</a>
+                                            <a class="footer-menu__list-link" href="#">Гид по стилю</a>
                                         </li>
                                         <li class="footer-menu__list-item">
-                                            <a class="footer-menu__list-link" href="#">Licenses</a>
+                                            <a class="footer-menu__list-link" href="#">Лицензии</a>
                                         </li>
                                         <li class="footer-menu__list-item">
-                                            <a class="footer-menu__list-link" href="#">Changelog</a>
+                                            <a class="footer-menu__list-link" href="#">Журнал изменений</a>
                                         </li>
                                     </ul>
                                 </div>
                             </nav>
                             <div class="footer-main__socials footer-socials">
-                                <div class="footer-socials__title">Follow skillz</div>
+                                <div class="footer-socials__title">Подписаться на скиллз</div>
                                 <div class="footer-socials__items">
                                     <a class="footer-socials__elem" href="#">
                                         <img src="./img/icons/tiktok.svg" alt="TikTok">
@@ -551,8 +585,8 @@
             <div class="footer__bottom footer-bottom">
                 <div class="_container">
                     <div class="footer-bottom__body">
-                        <span class="footer-bottom__text">© Skillz Template</span>
-                        <span class="footer-bottom__text">Powered by Webflow</span>
+                        <span class="footer-bottom__text">© Skillz Шаблон</span>
+                        <span class="footer-bottom__text"></span>
                     </div>
                 </div>
             </div>
@@ -565,8 +599,8 @@
                     <button class="popup-top__close close" data-popup-close></button>
                 </div>
                 <div class="popup__content popup-complete">
-                    <div class="popup-complete__title">Thank You for Contacting</div>
-                    <div class="popup-complete__text">We will contact you shortly</div>
+                    <div class="popup-complete__title"></div>
+                    <div class="popup-complete__text">Мы свяжемся с Вами в скором времени</div>
                 </div>
             </div>
         </div>
@@ -574,6 +608,8 @@
     <script src="./js/wow.min.js"></script>
     <script src="./js/app.js" type="module"></script>
     <script src="./js/scripts-h.js"></script>
+    <script src="./js/lang-switcher.js"></script>
+    <script src="./js/languages.js"></script>
 </body>
 
 </html>

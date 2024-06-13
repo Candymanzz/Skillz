@@ -78,7 +78,8 @@
                             <div class="menu__content menu-content">
                                 <ul class="menu-content__list">
                                     <li class="menu-content__list-item">
-                                        <a class="menu-content__list-link scroll-to" href="#courses">Courses</a>
+                                        <a class="menu-content__list-link scroll-to lng-courses"
+                                            href="#courses">Courses</a>
                                     </li>
                                     <li class="menu-content__list-item">
                                         <a class="menu-content__list-link scroll-to light-theme-t"
@@ -109,6 +110,19 @@
                                         toggleThemeBtn.addEventListener('click', () => {
                                             body.classList.toggle('light-theme');
                                         });
+                                    </script>
+                                    <li class="menu-content__list-item top-header__exits2 hidden">
+                                        <div class="top-header__select">
+                                            <a href="./af-regr.html">RU</a>
+                                        </div>
+                                    </li>
+                                    <script>
+                                        function changeLanguage() {
+                                            var selectedLanguage = document.getElementById("header-selct").value;
+                                            if (selectedLanguage === "ru") {
+                                                window.location.href = "af-regr.html"; // Замените на URL-адрес русской страницы
+                                            }
+                                        }
                                     </script>
                                 </ul>
                             </div>
@@ -151,17 +165,18 @@
                 <div class="main-block__content">
                     <div class="_container">
                         <div class="main-block__body">
-                            <h3 class="main-block__label wow animate__animated animate__fadeInUp"
+                            <h3 class="main-block__label wow animate__animated animate__fadeInUp lng-qwe"
                                 data-wow-duration="0.6s">Featured Course</h3>
-                            <h1 class="main-block__title wow animate__animated animate__fadeInUp"
+                            <h1 class="main-block__title wow animate__animated animate__fadeInUp lng-qwe"
                                 data-wow-duration="0.6s" data-wow-delay="0.1s">Run your own online learning platform
                             </h1>
-                            <p class="main-block__text wow animate__animated animate__fadeInUp" data-wow-duration="0.6s"
-                                data-wow-delay="0.3s">A deep-dive on the Instagram algorythm, hashtags, content
+                            <p class="main-block__text wow animate__animated animate__fadeInUp lng-qwe"
+                                data-wow-duration="0.6s" data-wow-delay="0.3s">A deep-dive on the Instagram algorythm,
+                                hashtags, content
                                 strategy, and branding.</p>
-                            <span class="main-block__by wow animate__animated animate__fadeInUp"
+                            <span class="main-block__by wow animate__animated animate__fadeInUp lng-qwe"
                                 data-wow-duration="0.6s" data-wow-delay="0.5s">Kathryn Murphy</span>
-                            <a class="main-block__button button button_green wow animate__animated animate__fadeInUp"
+                            <a class="main-block__button button button_green wow animate__animated animate__fadeInUp lng-qwe"
                                 data-wow-duration="0.6s" data-wow-delay="0.7s" href="./p1/article1.html">Learn More</a>
                         </div>
                     </div>
@@ -577,6 +592,8 @@
     <script src="./js/wow.min.js"></script>
     <script src="./js/app.js" type="module"></script>
     <script src="./js/scripts-h.js"></script>
+    <script src="./js/lang-switcher.js"></script>
+    <script src="./js/languages.js"></script>
 </body>
 
 </html>
