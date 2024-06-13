@@ -2449,3 +2449,7 @@ body ::selection {
         font-size: calc(16px + 2*((100vw - 320px)/960))
     }
 }
+
+.top-button {
+    background-color: #1C1C33;
+}

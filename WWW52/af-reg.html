@@ -11,10 +11,47 @@
     <link rel="manifest" href="./img/favicon/site.webmanifest">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" id="theme-link">
     <title>Skillz</title>
+    <style>
+        /* Default dark theme styles */
+        body {
+            background-color: #1C1C33;
+            color: #fff;
+        }
+
+        #toggleThemeBtn {
+            background-color: #fff;
+            color: #333;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        #toggleThemeBtn:hover {
+            background-color: #e6e6e6;
+        }
+
+        /* Light theme styles */
+        .light-theme {
+            background-color: #afafaf;
+            color: #333;
+        }
+    </style>
 </head>
 
 <body class="_lock-scroll">
+    <style>
+        .light-theme {
+            background-color: #afafaf;
+            color: #333;
+        }
+    </style>
     <div class="wrapper">
         <div class="preloader" id="preloader">
             <div class="preloader__icon">
@@ -44,7 +81,8 @@
                                         <a class="menu-content__list-link scroll-to" href="#courses">Courses</a>
                                     </li>
                                     <li class="menu-content__list-item">
-                                        <a class="menu-content__list-link scroll-to" href="#workshops">Free
+                                        <a class="menu-content__list-link scroll-to light-theme-t"
+                                            href="#workshops">Free
                                             Workshops</a>
                                     </li>
                                     <li class="menu-content__list-item">
@@ -60,6 +98,18 @@
                                         <a class="menu-content__list-link scroll-to"
                                             href="./prof/profile.html">Profile</a>
                                     </li>
+                                    <li class="menu-content__list-item top-header__exits2 hidden">
+                                        <button class="menu-content__list-link scroll-to lng-theme top-button"
+                                            id="toggleThemeBtn">Switch theme</button>
+                                    </li>
+                                    <script>
+                                        const toggleThemeBtn = document.getElementById('toggleThemeBtn');
+                                        const body = document.body;
+
+                                        toggleThemeBtn.addEventListener('click', () => {
+                                            body.classList.toggle('light-theme');
+                                        });
+                                    </script>
                                 </ul>
                             </div>
                         </div>

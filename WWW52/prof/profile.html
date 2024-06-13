@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="icon" href="images/svg/logo.svg" type="image/x-icon">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
     <link rel="stylesheet" type="text/css" href="css/style.css" id="theme-link">
 
     <title>Profile</title>
@@ -14,7 +14,7 @@
 
 <body>
     <div class="loading">
-        <img src="images/svg/logo.svg" alt="logo">
+        <img src="logo.svg" alt="logo">
     </div>
     <div class="preload">
         <div class="wrapper">
@@ -68,7 +68,23 @@
                                 <label class="birthDate label lng-birthday">Birth date:</label><br>
                                 <label id="birthDate"></label><br><br><br>
 
-                                <button id="exit" class="top-header__in lng-exit">Logout</button>
+                                <button id="exit" class="top-header__in lng-exit">Logout</button><br><br><br>
+
+                                <button id="clearStorage">Clear Local Storage</button>
+
+                                <script>
+                                    // Get the button element
+                                    const clearStorageBtn = document.getElementById('clearStorage');
+
+                                    // Add a click event listener to the button
+                                    clearStorageBtn.addEventListener('click', () => {
+                                        // Clear the localStorage
+                                        localStorage.clear();
+                                        console.log('Local storage has been cleared.');
+
+                                        window.location.reload();
+                                    });
+                                </script>
                             </div>
                         </div>
                     </div>
